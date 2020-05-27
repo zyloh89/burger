@@ -3,7 +3,7 @@ const orm = require("../config/orm.js");
 
 const burger = {
   selectAll: function(cb) {
-    return orm.selectall("burgers", function (res) {
+    return orm.selectAll("burgers", function (res) {
       cb(res)
     });
   },
@@ -16,5 +16,5 @@ const burger = {
   },
 };
 
-// Export the database functions for the controller (burgersController.js).
+// Export the database functions for the controller
 module.exports = burger;
